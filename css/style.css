@@ -260,7 +260,7 @@ a:hover,a:focus {
 }
 
 .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
-  color:#fff;
+  color:#000;
   text-decoration:none;
   opacity: 1;
   letter-spacing:1px;
@@ -326,22 +326,22 @@ a:hover,a:focus {
   transform: translate3d(0,0,0);
 }
 
-.photo-1,.photo-2,.photo-3,.photo-4,.photo-5,.photo-6{
+/*.photo-1,.photo-2,.photo-3,.photo-4,.photo-5,.photo-6{
 	background-size:cover;
 	height:100vh;
 	width:100%;
 	background-position:center;
-}
+}*/
 
 /* Thumbnail Images*/
-
+/*
 .photo-1 {background-image: url('../img/1.jpg');}
 .photo-2 {background-image: url('../img/2.jpg');}
 .photo-3 {background-image: url('../img/3.jpg');}
 .photo-4 {background-image: url('../img/4.jpg');}
 .photo-5 {background-image: url('../img/5.jpg');}
 .photo-6 {background-image: url('../img/6.jpg');}
-
+*/
 /* Modal Box */
 
 .modal-dialog {
@@ -530,10 +530,81 @@ footer p {
     bottom: 30px;
   }
 }
+/*****************************************************/
 
+.row{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.row::before{width: 100%;}
 #about{background: url(../images/01.png) no-repeat right bottom #d6dce2;padding-bottom: 200px;padding-top: 200px;}
-#about .row{display: flex;}
 #about  .col-md-111{width: 400px;text-align: center;}
-#about .left{display: inline-block;width: 150px;}
-#about .photo{width: 200px;}
-.text{text-align: center;padding-bottom: 50px;padding-top: 50px;}
+#about .left{display: inline-block;width: 200px;}
+#about .photo{width: 200px;padding-top: 50px;}
+.text{text-align: center;padding-bottom: 50px;padding-top: 50px;padding-left:100px ;width:100}
+.white{color: #fff; font-weight: 15px;}
+
+.hovereffect {
+  width: 100%;
+  float:none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  background: none;
+  cursor: pointer;
+}
+.thumbnail {width: 48%;}
+.thumbnail .col-md-12{background-size: 100%;background-repeat: no-repeat;background-position: center;}
+.thumbnail .photo-1 img{max-width: 100%;display: block;margin:auto}
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  height: auto;
+  max-width: none;
+  width: auto;
+  object-fit:none;display: block;margin: auto;/*padding-top: 200px;*/
+  /*position: absolute;left: 50%;top: 50%;*/
+}
+.modal-content{position: static;}
+.modal-body {
+  position: absolute;
+  width:100%;height:100%;
+  padding: 0;
+  top:0;left:0;
+}
+
+.modal-dialog {
+  margin: 0px auto;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height:100%;
+}
+.modal-content .carousel-inner{position: absolute;width:100%;top: 50%;transform: translate(0,-50%);}
+/*.hovereffect .photo-1 {
+  background-image: url(../images/1.jpg); height:500px;
+
+}
+.photo-2 {
+  background-image: url(../img/2.jpg);
+}
+.photo-3 {
+  background-image: url(../img/3.jpg);
+}
+.photo-4 {
+  background-image: url(../img/4.jpg);
+}
+.photo-5 {
+  background-image: url(../img/5.jpg);
+}
+.photo-6 {
+  background-image: url(../img/6.jpg);
+}
+.photo-7 {
+  background-image: url(../img/7.jpg);
+}
+.photo-8 {
+  background-image: url(../img/8.jpg);
+}
+.photo-9 {
+  background-image: url(../img/9.jpg);
+}
+.photo-10 {
+  background-image: url(../img/10.jpg);
+}*/
